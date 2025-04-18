@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfolio Elyes</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
-    <nav>
+    <nav class="main-nav">
         <ul>
             <li><a href="#home">Accueil</a></li>
             <li><a href="#about">À propos</a></li>
@@ -17,18 +19,20 @@
     </nav>
 
 
-    <section id="about">
+    <section id="about" class="about-section">
         <h2>À propos</h2>
-        <p>Développeur web basé à Paris.</p>
-        <audio controls>
+        <p class="bio">Développeur web basé à Paris, actuellement en pleine reconversion professionnelle.</p>
+        <p>Après plusieurs années d'expérience dans le domaine de la finance, j'ai décidé de me réorienter vers le développement web, une passion que j'ai toujours cultivée en parallèle de mon métier. Cette reconversion est pour moi l'opportunité de combiner créativité et technicité dans un secteur en constante évolution.</p>
+        <p>Je suis particulièrement intéressé par les technologies front-end et le design d'interfaces utilisateur. Ma formation actuelle me permet d'acquérir des compétences solides en HTML, CSS, JavaScript et dans les frameworks modernes.</p>
+        <audio controls class="audio-player">
             <source src="/Audio aléatoire.mp3" type="audio">
         </audio>
     </section>
 
 
-    <section id="work">
+    <section id="work" class="work-section">
         <h2>Travaux</h2>
-        <table border="1">
+        <table class="projects-table" border="1">
             <tr>
                 <th>Projet</th>
                 <th>Année</th>
@@ -41,33 +45,33 @@
     </section>
 
 
-    <section id="resume">
+    <section id="resume" class="resume-section">
         <h2>CV</h2>
-        <ul>
+        <ul class="resume-list">
             <li>Développeur, 2020-2024</li>
             <li>Stagiaire, 2019</li>
         </ul>
     </section>
 
 
-    <section id="contact">
+    <section id="contact" class="contact-section">
         <h2>Contact</h2>
-        <form>
+        <form class="contact-form">
             <label for="name">Nom:</label>
-            <input type="text" id="name"><br>
+            <input type="text" id="name" class="form-input"><br>
             
             <label for="email">Email:</label>
-            <input type="email" id="email"><br>
+            <input type="email" id="email" class="form-input"><br>
             
             <label for="message">Message:</label>
-            <textarea id="message"></textarea><br>
+            <textarea id="message" class="form-input"></textarea><br>
             
-            <button type="submit">Envoyer</button>
+            <button type="submit" class="submit-btn">Envoyer</button>
         </form>
     </section>
 
 
-    <footer>
+    <footer class="main-footer">
         <p>© 2025 Mon Portfolio - Elyes</p>
     </footer>
 </body>
